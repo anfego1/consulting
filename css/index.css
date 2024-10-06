@@ -1,0 +1,197 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* NOTA : LOS BORDES EN EL NAVEGADOR AÚN NO ESCALAN */
+
+:root {/* PLANTILLA */ font-size: 12px; --px1: 1px; --w4: 4px; --mtFooter: 80px; --pfooter: 20px; --bor2: 2px; --lsnav1: 2.5px; --wBMovil: 55px; --hBMovil: 55px; --bor: 1px; --meBMovil: 8px; --p3: 3px; --brrBMovil: 2px; --wBMovil2: 52px; --hBMovil2: 52px; --sMenuMovil: -230px; --lsMenuMovil: 2.5px; --p8: 8px; --p10: 10px; --mtContactoSinMenu: 58px; --p4: 4px; --p2: 2px; --pMenuTEA: 16px; --rcontactoTE: 5px; --mxtelefonoTE: 20px; --mtCreditosFooter: -15px; --mtaviso: 10px; --brr20: 20px; --p5: 5px; --brr5: 5px; --wLogo: 55px; --wLogo2:52px; --hLogo: 55px; --brr8: 8px; --brr3: 3px; --wLogoFooter: 55px; --wLogoFooter2: 52px; --hLogoFooter: 55px; --mt11-5: 11.5px; --w200: 200px; --w100: 100px; --w150: 150px; /* FIN PLANTILLA */ --p20: 20px; --wConsortium: 320px; --wRedLegal: 150px; --wAdn: 200px; --wCact: 200px; --hCajamap: 500px; --w300: 300px; --mt15: 15px; --ml12: 12px; --t75: 75px; --w280: 280px; --h220: 220px; --w270: 270px;}
+
+/* SELECTORES GENERALES */
+body {overflow-x: hidden; letter-spacing: var(--px1); display: flex; flex-direction: column; background-color: rgba(46, 85, 170, 0.788);}
+body::-webkit-scrollbar {width: var(--w4)}
+body::-webkit-scrollbar-thumb {background-color: rgba(128, 128, 128, 0.952); border-radius: var(--brr20);}
+body::-webkit-scrollbar-track-piece {background-color: white;}
+main {display:flex; width:100%; flex-direction: column; flex-wrap: wrap; overflow-x: hidden;}
+a {text-decoration: none;}
+footer {display: flex; flex-direction: column; position: relative; z-index: 50; width: 100%; background-color: black; align-items: center; padding: var(--pfooter);}
+footer>p {display: flex; width:100%; color:white; font-size: 0.8rem; width: 100%; justify-content: center; text-align: center; flex-wrap: wrap;}
+ol {display: flex; width: 100%; flex-direction: column; justify-content: center; list-style-type: disc; flex-wrap: wrap; font-family: Lato; font-size: 1.3rem;}
+h1 {font-size: 1.5rem; font-family: Roboto;}
+h2 {font-size: 1.2rem; font-family: Roboto;}
+
+
+/* BARRA DE NAVEGACIÓN */
+.nav1 {display: flex; font-family: Merriweather; width: 100%; align-items: center; position: relative; top: 0; z-index: 100; border-bottom: var(--bor2) solid rgba(128, 128, 128, 0.37); letter-spacing: var(--lsnav1); font-weight: bolder; padding-top: var(--p5); padding-bottom: var(--p5);}
+.fondoN {background-color: black;}
+.fondoNA {background-color: rgba(0, 0, 0, 0.61);}
+.logo {display: flex; z-index: 100; border-radius: var(--brr5);}
+.logo>img {width: var(--wLogo); height: var(--hLogo); opacity: 0.95; border-radius: var(--brr8); padding: var(--p5);}
+.logo>img:active {width: var(--wLogo2); height: var(--wLogo2);}
+.bMovil {display: flex; position: absolute; right: 0; width: var(--wBMovil); height: var(--hBMovil); font-size: 2.6rem; justify-content: center; align-items: center; margin-right: var(--meBMovil); color: rgba(255, 255, 255, 0.900); background-color: rgba(172, 166, 166, 0.274); padding: var(--p3); border-radius: var(--brr3);}
+.bMovil>i {margin-left: var(--p3)}
+.bMovil:hover {cursor: pointer;}
+.bMovil:active {background-color: black; border: var(--brrBMovil) solid rgba(179, 179, 240, 0.185);}
+#servicios {display: flex; padding: var(--pMenuTEA); text-decoration: none; color: rgba(255, 255, 255, 0.900); align-items: center; position: relative; justify-content: center;}
+#enlaceServicios {color: rgba(255, 255, 255, 0.900); margin-top: var(--mt11-5);}
+#enlaceServicios:hover {cursor: pointer; color: gray;}
+#enlaceServicios:active {font-size: 1.5rem;}
+#menuServicios {display: flex; flex-direction: column; font-size: 1.2rem; position: absolute; z-index: 200; border: var(--bor) solid rgba(128, 128, 128, 0.37); top: var(--t75); width: var(--w280); background-color: rgba(0, 0, 0, 0.970); justify-content: center; align-items: center; padding: var(--p10); left: var(--ml12);}
+.opcionServicios {padding: var(--p10); color: white}
+.opcionServicios:hover {cursor: pointer; color:rgb(46, 85, 170);}
+.opcionServicios:active {font-size: 1.1rem;}
+
+/* MENÚ MÓVIL */
+.menuMovil{display: flex; font-family: Merriweather; flex-direction: column; position: relative; width: 100%; background-color: black; z-index: 50; transition: margin 0.4s linear; letter-spacing: var(--lsMenuMovil);}
+.sMenuMovil{margin-top: var(--sMenuMovil); transition: margin 0.4s linear;}
+.menuMovil>a {padding: var(--p8); text-decoration: none; color: rgba(255, 255, 255, 0.900); font-size: 1.5rem; text-align: end;}
+.menuMovil>a:hover {background-color: rgb(49, 49, 49); cursor: pointer;}
+.menuMovil>a:active {color: rgb(0, 0, 0); font-size: 1.4rem;}
+#menuServiciosM {display: flex; flex-direction: column; width: 100%; align-items: flex-end;}
+
+/* CONTACTO EN MÓVILES */ 
+.contactoSinMenu {display: flex; position: relative; align-items: center; justify-content: space-evenly; padding: var(--p10); margin-top: var(--mtContactoSinMenu); z-index: 50; background-color: rgba(0, 0, 0, 0.911); transition: margin-top 0.5s linear;}
+.contactoEnMenu {display: flex; position: relative; align-items: center; justify-content: space-evenly; padding: var(--p10); z-index: 50; background-color: rgba(0, 0, 0, 0.911); transition: margin-top 0.5s linear;}
+.whatsapp {display: flex; align-items: center; font-size: 3.5rem; color: rgba(47, 187, 47, 0.863); padding: var(--p2);}
+.whatsapp:hover {cursor: pointer; color: rgba(47, 187, 47, 0.507); }
+.whatsapp:active {color: rgba(47, 187, 47, 0.308); font-size: 3.4rem;}
+.telefono {display: flex; align-items: center; font-size: 3rem; color: rgb(46, 85, 170); padding: var(--p4);}
+.telefono:hover {cursor: pointer; color: rgba(46, 85, 170, 0.521);}
+.telefono:active {font-size: 2.8rem; color: rgba(46, 85, 170, 0.308)}
+.email {display: flex; align-items: center; font-size: 3.2rem; color: rgba(255, 255, 0, 0.747); padding: var(--p2);}
+.email:hover {cursor: pointer; color: rgba(255, 255, 0, 0.521);}
+.email:active {color: rgba(255, 255, 0, 0.308); font-size: 3.1rem;}
+
+/* MENÚ TE */
+.menuTE {display: none; position: absolute; font-size: 1.6rem; width: 100%; justify-content: center;}
+.menuTE>a {display: flex; padding: var(--pMenuTEA); text-decoration: none; color: rgba(255, 255, 255, 0.900); align-items: center;}
+.menuTE>a:hover {cursor: pointer; color: gray}
+.menuTE>a:active {color: gray; font-size: 1.5rem;}
+
+/* CONTACTO EN TE */
+.contactoTE {display: none; position: absolute; right: var(--rcontactoTE);}
+.whatsappTE {display: flex; align-items: center; font-size: 3rem; color: rgba(47, 187, 47, 0.863); padding: var(--p2);}
+.whatsappTE:hover {cursor: pointer; color: rgba(47, 187, 47, 0.507); }
+.whatsappTE:active {color: rgba(47, 187, 47, 0.308); font-size: 2.9rem;}
+.telefonoTE {display: flex; align-items: center; font-size: 2.5rem; color: rgb(46, 85, 170); padding: var(--p4); margin-left: var(--mxtelefonoTE); margin-right: var(--mxtelefonoTE);}
+.telefonoTE:hover {cursor: pointer; color: rgba(46, 85, 170, 0.521);}
+.telefonoTE:active {color: rgba(46, 85, 170, 0.308); font-size: 2.4rem;}
+.emailTE {display: flex; align-items: center; font-size: 2.7rem; color: rgba(255, 255, 0, 0.747); padding: var(--p2);}
+.emailTE:hover {cursor: pointer; color: rgba(255, 255, 0, 0.521);}
+.emailTE:active {color: rgba(255, 255, 0, 0.308); font-size: 2.6rem;}
+
+/* VIDEO */
+#cajaVideo1 {display: flex; width: 100%; overflow-x: hidden; position: relative;}
+#video1 {display: flex; width: 100%;}
+
+/* ASESORÍA */
+.cajaAsesorias {display:flex; width: 100%; flex-direction: column; align-self: center; overflow-x: hidden; flex-wrap: wrap;}
+.asesoria{display: flex; width: 100%; flex-direction: column; align-items: center; font-family: Merriweather; font-weight: 600; flex-wrap: wrap; justify-content: center; padding: var(--p20);}
+.asesoriaP {display: flex; flex-direction: column; justify-content: center; flex-wrap: wrap; text-align: center; font-family: Lato; font-size: 1.3rem;}
+.fondoAsesoria {display: flex; width: 90%; flex-direction: column; background-color: rgba(0, 0, 0, 0.719); padding: var(--p20); color: rgba(255, 255, 255, 0.815); justify-content: center; align-items: center; border-radius: var(--p10); box-shadow: 2px 2px 2px black;}
+
+/* CV */
+.titulo1 {display: flex; width: 100%; align-items: center; justify-content: center; padding: var(--p20); font-weight: 600; flex-wrap: wrap;}
+#cv {display: flex; flex-direction: column; width: 100%; align-items: center; justify-content: center; font-family: Roboto; font-size: 1.2rem; font-weight: 600; flex-wrap: wrap;}
+.divcv {display: flex; flex-direction: column; align-items: center; width: 100%; }
+.divcv>a {display: flex; justify-content: center; align-items: center; text-align: center; color: black; text-decoration: underline;}
+.divcv>a:hover {color: rgba(0, 0, 255, 0.822)}
+#juan {display: flex; width: var(--w270); border-radius: var(--p10);}
+#fernando {display: flex; width: var(--w270); border-radius: var(--p10);}
+
+/* COLABORAMOS */
+#colaboramos {display: flex; width: 100%; justify-content: center; align-items: center; font-size: 1.2rem;  font-weight: 600; flex-wrap: wrap; overflow-x: hidden; padding: var(--p10); background-color: rgba(0, 0, 0, 0.500);}
+#consortium {display: flex; width: var(--w200)}
+#redLegal {display: flex; width: var(--w100); margin-left: var(--p20);}
+#adn {display: flex; width: var(--w150); margin-left: var(--p20);}
+#copturismo {display: flex; width: var(--w200); margin-left: var(--p20);}
+#perezDiepa {display: flex; width: var(--w100); margin-left: var(--p20);}
+.punto:hover {cursor: pointer;}
+
+
+/* MAPA */
+#cajamap {display: flex; width: 100vw; height: var(--hCajamap); overflow-x: hidden;}
+#map {display: flex; width: 100%;}
+
+/* FOOTER */
+#aviso {text-decoration: underline; font-size: 1.2rem;}
+.logoFooter>img {width: var(--wLogoFooter); border-radius: var(--brr5); height: var(--hLogoFooter);}
+.logoFooter>img:active {width: var(--wLogoFooter2); height: var(--wLogoFooter2);}
+#aviso:hover {color: gray;}
+#aviso:active {font-size: 1.1rem;}
+
+/* DISPOSITIVOS MUY PEQUEÑOS - (max-with en Escala3 depende del proyecto) */
+/* Escala1  (Escala2-50%) */
+@media screen and (max-width: 119px)
+{
+    :root {/* PLANTILLA */ font-size: 2.25px; --px1: 0.15px; --w4: 0.6px; --mtFooter: 12px; --pfooter: 3px; --bor2: 0.3px; --lsnav1: 0.375px; --wBMovil: 8.25px; --hBMovil: 8.25px; --bor: 0.15px; --meBMovil: 1.2px; --p3: 0.45px; --brrBMovil: 0.3px; --wBMovil2: 7.8px; --hBMovil2: 7.8px; --sMenuMovil: -34.5px; --lsMenuMovil: 0.375px; --p8: 1.2px; --p10: 1.5px; --mtContactoSinMenu: 4.5px; --p4: 0.6px; --p2: 0.3px; --pMenuTEA: 2.4px; --rcontactoTE: 0.75px; --mxtelefonoTE: 3px; --mtCreditosFooter: -2.25px; --mtaviso: 1.5px; --brr20: 3px; --p5: 0.75px; --brr5: 0.75px; --wLogo: 8.25px; --wLogo2:7.8px; --hLogo: 8.25px; --brr8: 1.2px; --brr3: 0.45px; --wLogoFooter: 8.25px; --wLogoFooter2: 7.8px; --hLogoFooter: 8.25px; --w200: 30px; --w100: 15px; --w150: 22.5px;/* FIN PLANTILLA */ --p20: 3px; --wConsortium: 48px; --wRedLegal: 22.5px; --wAdn: 30px; --wCact: 30px; --hCajamap: 75px; --w300: 45px; --mt15: 2.25px; --ml12: 1.8px; --t75: 11.25px; --w280: 42px; --h220: 33px; --w270: 40.5px;}
+    
+}
+
+/* Escala2  (Escala3-50%) */
+@media screen and (min-width: 120px) and (max-width: 229px)
+{
+    :root {/* PLANTILLA */ font-size: 4.5px; --px1: 0.3px; --w4: 1.2px; --mtFooter: 24px; --pfooter: 6px; --bor2: 0.6px; --lsnav1: 0.75px; --wBMovil: 16.5px; --hBMovil: 16.5px; --bor: 0.3px; --meBMovil: 2.4px; --p3: 0.9px; --brrBMovil: 0.6px; --wBMovil2: 15.6px; --hBMovil2: 15.6px; --sMenuMovil: -69px; --lsMenuMovil: 0.75px; --p8: 2.4px; --p10: 3px; --mtContactoSinMenu: 9px; --p4: 1.2px; --p2: 0.6px; --pMenuTEA: 4.8px; --rcontactoTE: 1.5px; --mxtelefonoTE: 6px; --mtCreditosFooter: -4.5px; --mtaviso: 3px; --brr20: 6px; --p5: 1.5px; --brr5: 1.5px; --wLogo: 16.5px; --wLogo2:15.6px; --hLogo: 16.5px; --brr8: 2.4px; --brr3: 0.9px; --wLogoFooter: 16.5px; --wLogoFooter2: 15.6px; --hLogoFooter: 16.5px; --w200: 60px; --w100: 30px; --w150: 45px; /* FIN PLANTILLA */ --p20: 6px; --wConsortium: 96px; --wRedLegal: 45px; --wAdn: 60px; --wCact: 60px; --hCajamap: 150px; --w300: 90px; --mt15: 4.5px; --ml12: 3.6px; --t75: 22.5px; --w280: 84px; --h220: 66px; --w270: 81px;}
+   
+}
+
+/* Escala3  (rootMovilFisrt-40%) */
+@media screen and (min-width: 230px) and (max-width: 359px)
+{
+    :root {/* PLANTILLA */ font-size: 9px; --px1: 0.6px; --w4: 2.4px; --mtFooter: 48px; --pfooter: 12px; --bor2: 1.2px; --lsnav1: 1.5px; --wBMovil: 33px; --hBMovil: 33px; --bor: 0.6px; --meBMovil: 4.8px; --p3: 1.8px; --brrBMovil: 1.2px; --wBMovil2: 31.2px; --hBMovil2: 31.2px; --sMenuMovil: -138px; --lsMenuMovil: 1.5px; --p8: 4.8px; --p10: 6px; --mtContactoSinMenu: 18px; --p4: 2.4px; --p2: 1.2px; --pMenuTEA: 9.6px; --rcontactoTE: 3px; --mxtelefonoTE: 12px; --mtCreditosFooter: -9px; --mtaviso: 6px; --brr20: 12px; --p5: 3px; --brr5: 3px; --wLogo: 33px; --wLogo2:31.2px; --hLogo: 33px; --brr8: 4.8px; --brr3: 1.8px; --wLogoFooter: 33px; --wLogoFooter2: 31.2px; --hLogoFooter: 33px; --w200: 120px; --w100: 60px; --w150: 90px; /* FIN PLANTILLA */ --p20: 12px; --wConsortium: 192px; --wRedLegal: 90px; --wAdn: 120px; --wCact: 120px; --hCajamap: 300px; --w300: 180px; --mt15: 9px; --ml12: 7.2px; --t75: 45px; --w280: 168px; --h220: 132px; --w270: 162px;}
+
+}
+
+/* DISPOSITIVOS PROMEDIO Y TABLETS PEQUEÑAS */
+/* Escala4 (rootMovilFisrt) */
+@media screen and (min-width: 360px) and (max-width: 767px)
+{
+   
+}
+
+/* TABLETS */
+/* Escala5 */
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{
+    :root {--w270: 300px; --h220: 256.65px}
+    .cajaAsesorias {flex-direction: row; justify-content: space-evenly;}
+    .asesoria {width: 50%; justify-content: flex-start;}
+    #cv {flex-direction: row; align-items: flex-start;}
+    .divcv {width: 50%;}
+    #colaboramos {flex-direction: row; justify-content: space-evenly;}
+    #colab1 {flex-direction: row;}
+    #colab2 {width: 50%;}
+    #colab3 {width: 50%;}
+    #colab4 {width: 50%;}
+    #colab5 {width: 50%;}
+    #colab6 {width: 50%;}
+    #colab7 {width: 50%;}
+}
+
+/* ESCRITORIOS */
+/* Escala6 */
+@media screen and (min-width: 1200px)
+{ 
+    :root {--w270: 330px; --h220: 366.65px}
+    /* PLANTILLA */
+    .menuMovil {display: none;}
+    .bMovil {display: none;}
+    .nav1 {position: fixed;}
+    #contacto {display: none;}
+    .menuTE {display: flex;}
+    .contactoTE {display: flex;}
+    #cajavideo1 {top:0;}
+    .cajaAsesorias {flex-direction: row;}
+    .asesoria {width: 50%; justify-content: flex-start;}
+    #cv {flex-direction: row; align-items: flex-start;}
+    .divcv {width: 50%;}
+    #colaboramos {flex-direction: row;}
+    #colab1 {flex-direction: row;}
+    #colab2 {width: 33.33%;}
+    #colab3 {width: 33.33%;}
+    #colab4 {width: 33.33%;}
+    #colab5 {width: 33.33%;}
+    #colab6 {width: 33.33%;}
+    #colab7 {width: 33.33%;}
+    /* FIN PLANTILLA */
+}
